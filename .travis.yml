@@ -10,4 +10,4 @@ before_script: pip install docker-compose
 
 
 script:
-    - docker-compose run app sc -c "python manage.py test && flake8"
+    - docker-compose run app sh -c "python manage.py test && flake8"
